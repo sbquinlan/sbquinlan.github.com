@@ -1,7 +1,50 @@
-<html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  {% if page.title == 'Home' %}
+  <title>Sean Quinlan</title>
+  {% else %}
+  <title>{{ page.title }}</title>
+  {% endif %}
+   <meta name="author" content="Sean Quinlan" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <link href="http://feeds.seanquinlan.com/seanquinlan" rel="alternate" title="Sean Quinlan" type="application/rss+xml" />
+   <link rel="shortcut icon" href="/favicon.ico" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}css/base.css">
+   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}css/skeleton.css">
+   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}css/layout.css">
+</head>
 <body>
-
-  {{ content }}
-
+  <div class="container">
+    <div class="sixteen columns title">
+      <a href="{{ site.baseurl }}" title="Sean Quinlan: Home">Sean Quinlan</a>
+    </div>
+    
+    <div class="eleven columns">
+      {{ content }}
+    </div>
+    
+    <div class="sixteen columns footer">
+      <div class="contact">
+        <p>
+          Copyright © Sean Quinlan 2011
+        </p>
+      </div>
+      
+      <div>
+        <p>
+          Follow Sean: 
+           <a href="http://twitter.com/squinlan">Twitter</a> | 
+           <a href="http://facebook.com/sbquinlan">Facebook</a> |
+           <a href="http://feeds.seanquinlan.com/seanquinlan">RSS</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  
 </body>
 </html>
