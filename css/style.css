@@ -1,0 +1,64 @@
+body, html {
+  background-color: rgb(133, 133, 133);
+  height: 100%;
+}
+
+.container {
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+}
+
+.container div.sixteen.columns.title {
+  background-color: rgb(33, 33, 33);
+  margin: 1em 0 0 0;
+  width: 100%;
+}
+
+.title {
+  font-family: 'Signika Negative', sans-serif;
+  overflow: hidden;
+}
+
+.title h1 {
+  color: rgb(233, 233, 233);
+  float: left;
+  font-family: 'Signika Negative', sans-serif;
+  line-height: 1.3em;
+  margin: 0 0.3em;
+  text-decoration: none;
+  -webkit-transition: all 0.1s;
+}
+
+.title h1:hover {
+  color: rgb(255, 255, 255);
+  position: relative;
+  text-decoration: none;
+  text-shadow: 4px 4px 0.5em rgb(0, 0, 0);
+  top: -4px;
+  left: -4px;
+}
+
+.nav div {
+  display: inline-block;
+  text-align: left;
+  width: 50px;
+}
+
+.nav a {
+  background-color: rgb(33, 33, 33);
+  color: rgb(233, 233, 233);
+  float: left;
+  padding-left: 30px;
+  position: relative;
+  text-decoration: none;
+  top: -40px;
+  width: 300px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+}
+
+.nav a:hover {
+  background-color: rgb(233, 233, 33);
+  color: rgb(33, 33, 33);
+  font-weight: bold;
+}
