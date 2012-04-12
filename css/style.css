@@ -19,47 +19,58 @@ body, html {
   overflow: hidden;
 }
 
+.title p {
+  height: 40px;
+}
+
 .title h1 {
   color: rgb(233, 233, 233);
   float: left;
   font-family: 'Signika Negative', sans-serif;
   line-height: 1.3em;
   margin: 0 0.3em;
+  position: absolute;
   text-decoration: none;
-  -webkit-transition: all 0.1s;
+  text-shadow: 4px 4px 0.5em rgb(0, 0, 0);
+  z-index: 10;
 }
 
 .title h1:hover {
   color: rgb(255, 255, 255);
-  position: relative;
   text-decoration: none;
-  text-shadow: 4px 4px 0.5em rgb(0, 0, 0);
-  top: -4px;
-  left: -4px;
+  
 }
 
 .nav div {
   display: inline-block;
+  height: 70px;
   text-align: left;
   width: 50px;
 }
 
 .nav a {
-  background-color: rgb(33, 33, 33);
   color: rgb(233, 233, 233);
   float: left;
-  padding-left: 30px;
   position: relative;
+  text-align: center;
   text-decoration: none;
-  top: -40px;
+  left: -125px;
+  top: 25px;
   width: 300px;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
-  
 }
 
 .nav a:hover {
-  background-color: rgb(233, 233, 33);
+  background: #858514; /* Old browsers */
+  background: -moz-linear-gradient(45deg,  #858514 0%, #e9e921 50%, #858514 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#858514), color-stop(50%,#e9e921), color-stop(100%,#858514)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(45deg,  #858514 0%,#e9e921 50%,#858514 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(45deg,  #858514 0%,#e9e921 50%,#858514 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(45deg,  #858514 0%,#e9e921 50%,#858514 100%); /* IE10+ */
+  background: linear-gradient(45deg,  #858514 0%,#e9e921 50%,#858514 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#858514', endColorstr='#858514',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  
   color: rgb(33, 33, 33);
   font-weight: bold;
 }
