@@ -7,6 +7,14 @@ p {
   margin: 20px;
 }
 
+pre {
+  border: black solid thin;
+  border-radius: 10px;
+  background-color: rgb(215, 230, 230);
+  margin: 0 3em;
+  padding: 1em 0.5em;
+}
+
 .container {
   background-color: rgb(255, 255, 255);
 }
