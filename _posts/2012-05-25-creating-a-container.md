@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to Create a Container View Controller that Works with Storyboard
+tags: ios
 ---
 I started writing iOS apps years ago, but gave up the part-time work for a full-time job and school. Recently, I returned to the iOS SDK, which has come a long, long way in the past years. 
 
