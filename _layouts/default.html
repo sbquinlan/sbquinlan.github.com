@@ -10,18 +10,11 @@
   <link rel="shortcut icon" href="/favicon.ico" />
   
   <!-- OG Tags -->
+  <meta property="og:type" content="website" />
   <meta property="og:title" content="{{ page.title }}" />
   <meta property="og:url" content="http://seanquinlan.com{{ page.url }}" />
   <meta property="og:description" content="{{ content | truncatewords:30 }}" />
   <meta property="og:image" content="http://seanquinlan.com/images/farmer.png" />
-  
-  {% if page.title == 'Sean Quinlan' %}
-  <meta property="og:type" content="website" />
-  {% else %}
-  <meta property="og:type" content="article" />
-  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}" />
-  <meta property="article:author" content="Sean Quinlan" />
-  {% endif %}
 
   <!-- Skeleton CSS -->
   <link rel="stylesheet" type="text/css" href="/css/base.css">
