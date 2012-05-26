@@ -11,6 +11,7 @@ pre {
   border: black solid thin;
   border-radius: 10px;
   background-color: rgb(215, 230, 230);
+  font-family: monospace;
   margin: 0 3em;
   padding: 1em 0.5em;
 }
