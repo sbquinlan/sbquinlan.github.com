@@ -2,5 +2,19 @@
 layout: default
 title: Sean Quinlan
 ---
-
-<h1>Hello Sean</h1>
+<div id="greeting">
+  <h2>Hey!</h2>
+  <p>I'm Sean, owner, web developer, and mobile developer for <a href="http://quindistries.com">Quindistries</a>. I'm also an engineer at Facebook, but this site is for chronicling lessons learned whilst working on various <a href="">side projects</a> and consulting projects.</p>
+</div>
+<hr/>
+<div id="recent_posts">
+  <h3>Posts</h3>
+  <ul>
+  {% for post in site.posts %}
+    <li><a href="{{ post.url }}">
+      <span class="post_date">{{ post.date | date_to_string }}</span>
+      <span class="post_title">{{ post.title }}</span>
+    </a></li>
+  {% endfor %}
+  </ul>
+</div>

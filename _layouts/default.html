@@ -6,48 +6,43 @@
   <meta name="author" content="Sean Quinlan" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link href="http://feeds.seanquinlan.com/seanquinlan" rel="alternate" title="Sean Quinlan" type="application/rss+xml" />
-   
-   <link rel="shortcut icon" href="/favicon.ico" />
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
 
-   <!-- Skeleton CSS -->
-   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}css/base.css">
-   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}css/skeleton.css">
-   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}css/layout.css">
+  <!-- Skeleton CSS -->
+  <link rel="stylesheet" type="text/css" href="/css/base.css">
+  <link rel="stylesheet" type="text/css" href="/css/skeleton.css">
+  <link rel="stylesheet" type="text/css" href="/css/layout.css">
    
-   <!-- Fonts -->
-   <link href='http://fonts.googleapis.com/css?family=Signika+Negative:600' rel='stylesheet' type='text/css'>
+  <!-- Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Signika+Negative:600' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
    
-   <!-- Site CSS -->
-   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}css/style.css">
+  <!-- Site CSS -->
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
   <div class="container">
+    
     <div class="sixteen columns title">
-      <div class="">
-        <div class="eight columns">
-          <a href="{{ site.baseurl }}" title="Sean Quinlan">
-            <h1>Sean Quinlan</h1>
-            <p></p>
-          </a>
-        </div>
-        
-        <div class="eight columns nav">
-            <div><a href="">about</a></div>
-            <div><a href="">projects</a></div>
-            <div><a href="http://stackoverflow.com/users/318666/squinlan">stackoverflow</a></div>
-            <div><a href="http://twitter.com/squinlan">twitter</a></div>
-            <div><a href="http://github.com/sbquinlan">github</a></div>
-        </div>
+      <div class="eight columns">
+        <a href="/index.html" title="Sean Quinlan"> <h1>Sean Quinlan</h1> <p></p> </a>
+      </div>
+      
+      <div class="eight columns nav">
+        <div><a href="/projects.html">projects</a></div>
+        <div><a href="http://twitter.com/squinlan">twitter</a></div>
+        <div><a href="http://github.com/sbquinlan">github</a></div>
       </div>
     </div>
     
-    
-    
-    <div class="eleven columns">
+    <div id="content" class="sixteen columns">
       {{ content }}
     </div>
+    
+    <div id="footer" class="sixteen columns">
+      <p>© 2012 Sean Quinlan</p>
+    </div>
   </div>
-  
-  
 </body>
 </html>
