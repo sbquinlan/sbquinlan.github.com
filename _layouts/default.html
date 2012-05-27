@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>{{ page.title }}</title>
-  <meta name="description" content="{{ page.excerpt }}">
+  <meta name="description" content="A chronicle of lessons learned whilst working on various ios and web projects.">
   <meta name="author" content="Sean Quinlan" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link href="http://seanquinlan.com/atom.xml" rel="alternate" title="Sean Quinlan" type="application/atom+xml" />
@@ -14,7 +14,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="{{ page.title }}" />
   <meta property="og:url" content="http://seanquinlan.com{{ page.url }}" />
-  <meta property="og:description" content="{{ page.excerpt }}" />
+  <meta property="og:description" content="{{ content | strip_html | truncatewords:30 }}" />
   <meta property="og:image" content="http://seanquinlan.com/images/farmer.png" />
 
   <!-- Skeleton CSS -->
